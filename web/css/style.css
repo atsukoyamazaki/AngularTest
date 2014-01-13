@@ -1,0 +1,331 @@
+root { 
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a4f54;
+    background-color: ghostwhite;
+    font-size: small;
+}
+
+a {
+    color: #e33b06;
+}
+
+table {
+    empty-cells: show;
+}
+
+form.jsfcrud_list_form th, td th {
+    font-size: x-small;
+    color: #4e6a71;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #90b4bd;
+    border-right-color: #90b4bd;
+    letter-spacing: 3px;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #b2d5d6;
+}
+
+td {
+    vertical-align: top;
+    padding-bottom: 8px;
+    font-size: small;
+}
+
+form.jsfcrud_list_form td, td td {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #b2d5d6;
+    border-right-color: #b2d5d6;
+    vertical-align: baseline;
+    padding-bottom: 0px;
+}
+
+tr.jsfcrud_odd_row {
+    background-color: #fefeff;
+    color: #4e6a71;
+}
+
+
+tr.jsfcrud_even_row {
+    background-color: #eff5fa;
+    color: #4e6a71;
+}
+
+#busyImage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#menubar {
+    width: 100%;
+    height: 100px;
+    background-color: darkorchid;	
+}
+
+div#menubar > div{ margin:0px 20px; position: relative; }
+
+div.DropMenu {
+    display:none;
+    position:absolute;
+    top:96px;
+    left: -34px;
+    width:150px;
+    text-align:center;
+    background:darkorchid;
+    z-index:2;
+    padding:2px;
+}
+
+div#logoDiv {float:left;}
+div#profileDiv {float:left; top: 75px;}
+div#dropDownFriends {float:left;}
+div#dropDownPosts {float:left;}
+div#dropDownSettings {float: right;}
+
+.MenuProfileLink {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.MenuProfileLink:hover {
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.MenuIcon:hover {
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.MenuButton {
+    background-color: darkorchid;
+    border:0px solid;
+    display:inline-block;
+    color:#000;
+    font-family:arial;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 16px;
+    text-decoration:none;
+    width: 150px;
+}
+
+.MenuButton:hover {
+    background-color: whitesmoke;
+}
+
+.MenuButton:active {
+    position:relative;
+    top:1px;
+}
+
+.FriendMenuText {
+    background-color: darkorchid;
+    border:0px solid;
+    display:inline-block;
+    color:black;
+    font-family:arial;text-align:center;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 0px;
+    text-decoration:none;
+    width: 100px;
+}
+.FriendMenuButton {
+    background-color: darkorchid;
+    border:0px solid;
+    display:inline-block;
+    color:#000;
+    font-family:arial;
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    padding:4px 0px;
+    text-decoration:none;
+    width: 25px;
+}
+.FriendMenuButton:hover {
+    background-color: whitesmoke;
+}
+.FriendMenuButton:active {
+    position:relative;
+    top:1px;
+}
+
+#searchField {
+    top: 70px;
+}
+.SearchBar {
+    width: 250px;
+    margin: 0;
+    border: none;
+    background-color: whitesmoke;
+}
+.SearchButton {
+    margin: 0;
+    border: none;
+    background-color: whitesmoke;	
+}
+.SearchButton:hover {
+    background-color: darkorchid;
+}
+.Button {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+
+    background-color:#ffffff;
+
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+
+    border:1px solid #dcdcdc;
+
+    display:inline-block;
+    color:#666666;
+    font-family:arial;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 16px;
+    text-decoration:none;
+
+    text-shadow:0px 1px 0px #ffffff;
+}
+.Button:hover {
+    background-color:#f6f6f6;
+}
+.Button:active {
+    position:relative;
+    top:1px;
+}
+
+#content {
+    margin-left: 25%;
+    margin-right: 45%;
+}
+#loginbox {
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.PostContent, .CommentContent {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 550px;
+
+}
+.PostContent a, .CommentContent a{
+
+    color:#141823;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.PostContent  a:hover, .CommentContent a:hover{
+
+    color:#141823;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+t td {
+    padding-top: 10px;
+    border-style:none;
+    border-bottom: 1px solid darkorchid;
+}
+
+
+.PostTextInput {
+    resize: none;
+    border-color: darkorchid;
+    width: 690px;
+}
+
+.CommentTextInput{
+    resize: none;
+    border-color: darkorchid;
+    width: 550px;
+}
+
+.PostInput .Button,  .PostButton .Button  {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 60%;
+    margin-right: 50%;
+}
+.PostContent .Button{
+    margin-top: 30px;
+}
+
+.CommentAdd .Button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40%;
+    margin-right: 50%;
+}
+
+.PostButtonTab .Button {
+    float: left;
+}
+.CommentPost, .PostButton{
+    width: 550px;
+}
+.CommentList{
+    margin-top:50px;
+    width: 550px;
+    border: 1px solid #C8C1CC;
+}
+
+.CommentAdd{
+    width: 548px;
+    padding-top:50px;
+}
+.PostContent .PostImage{
+    width: 120px !important;
+    padding-right: 5px  !important;
+}
+.CommentList .PostImage{
+    width: 100px !important;
+    padding:10px  !important;
+
+}
+.ArrowImage{
+    padding:10px 5px 0px 5px;
+}
+#leftpane{
+    float:left;
+    width: 400px;
+
+}
+#rightpane{
+    float:left;
+    margin-left: -100px;
+
+}
