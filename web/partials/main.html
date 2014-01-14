@@ -1,4 +1,5 @@
 <h1>{{title}}</h1>
+ <div ng-todo todos-directive="todos"></div>
 <label><input type="radio" ng-model="doneType" value="line">check out</label>
 <label><input type="radio" ng-model="doneType" value="hide">hide</label>
 <ul ng-class="doneType">
@@ -6,5 +7,5 @@
         <label><input type="checkbox" ng-model="todo.done">{{todo.text}}
         </label>
     </li>
-
+   
 </ul>

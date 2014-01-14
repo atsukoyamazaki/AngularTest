@@ -1,10 +1,3 @@
-//angular.module("ToDo", ["Controllers"], ["$routeProvider", function($routeProvider){
-//  $routeProvider.when("/", {
-//    controller : "AppCtrl",
-//    templateUrl : "partials/main.html"
-//  });
-//}]);
-//
 //var app = angular.module('ToDo',  ['ngRoute']);
 //
 //app.config(function ($routeProvider) {
@@ -16,16 +9,14 @@
 //    }
 //  )
 //});
+//app.controller("AppCtrl", function ($scope) {
+//   $scope.title = "Main";
+//});
 
-
-var app = angular.module("ToDo", ["ngRoute"], ["$routeProvider", function($routeProvider){
+angular.module("ToDo", ["ngRoute", "Controllers", "Directives"], ["$routeProvider", function($routeProvider){
   $routeProvider.when("/", {
     controller : "MainCtrl",
     templateUrl : "partials/main.html"
   });
 }]);
  
-//app.controller("AppCtrl", function ($scope) {
-//   $scope.title = "Main";
-//});
-
