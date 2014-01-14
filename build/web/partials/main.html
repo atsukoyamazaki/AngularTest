@@ -1,8 +1,10 @@
 <h1>{{title}}</h1>
-<ul>
-    <li ng-repeat="todo in todos">
+<label><input type="radio" ng-model="doneType" value="line">check out</label>
+<label><input type="radio" ng-model="doneType" value="hide">hide</label>
+<ul ng-class="doneType">
+    <li ng-repeat="todo in todos" ng-class="{done:todo.done}">
         <label><input type="checkbox" ng-model="todo.done">{{todo.text}}
         </label>
     </li>
-        
+
 </ul>

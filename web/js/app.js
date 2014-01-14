@@ -18,7 +18,7 @@
 //});
 
 
-var app = angular.module("ToDo", ["Controllers", "ngRoute"], ["$routeProvider", function($routeProvider){
+var app = angular.module("ToDo", ["ngRoute"], ["$routeProvider", function($routeProvider){
   $routeProvider.when("/", {
     controller : "MainCtrl",
     templateUrl : "partials/main.html"
