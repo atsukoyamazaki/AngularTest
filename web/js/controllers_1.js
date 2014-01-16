@@ -16,7 +16,7 @@
 //
 //        ];
 //    }]);
-angular.module("Controllers", ["Services", "ngResouce"]).controller("MainCtrl", ["$scope", "$resource", function($scope, $resource) {
+angular.module("Controllers", ["Services"]).controller("MainCtrl", ["$scope", "LocalStorage", function($scope, LocalStorage) {
         $scope.title = "Todo";
         $scope.todos = [
 //            {text: "study Angularjs", done: true},
@@ -25,16 +25,15 @@ angular.module("Controllers", ["Services", "ngResouce"]).controller("MainCtrl", 
         ];
         $scope.doneType = "line";
 
-        var todoModel = $resource("/todos");
         $scope.save = function() {
-            todoModel.save({type: "todo", todos: $scope.todos});
+            LocalStorage.save("todos", $scope.todos);
         };
         $scope.load = function() {
-            $scope.todos = todoModel.query({type: "todo"});
+            $scope.todos = LocalStorage.get("todos");
         };
         $scope.remove = function() {
-            todoModel.remove({type: "todo"});
-            $scope.todos = [];
+            LocalStorage.remove("todos");
         };
+
 
     }]);
